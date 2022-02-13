@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+	.container {
+		display: flex;
+		justify-content: center;
+		height: 100v;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	h1 {
+
+		font-family: 'Staatliches', cursive;
+
+	}
+</style>
+
+<body>
+	<div class="container">
+		<h1>Login without Password</h1>
+		<div id="sawo-container" style="height: 300px; width: 400px;"></div>
+	</div>
+
+	<script src="https://websdk.sawolabs.com/sawo.min.js">
+
+	</script>
+	<script>
+		var config = {
+        // should be same as the id of the container created on 3rd step
+        containerID: "sawo-container",
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: "email",
+        // Add the API key copied from 2nd step
+        apiKey: "12007a6d-0594-411b-bc0b-05f6c5465e7a",
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+            window.location = "./Page/Home.html";
+        },
+    };
+    var sawo = new Sawo(config);
+    sawo.showForm();
+	</script>
+	<script src="script.js">
+
+	</script>
+</body>
+
+</html>
