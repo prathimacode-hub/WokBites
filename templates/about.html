@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<style>
+            * {
+  box-sizing: border-box;
+}
+.title{
+            font-size: 50px;
+            text-align: center;
+            color: rgb(189, 39, 39);
+            padding-bottom: 5px ;
+            margin-bottom: 2px ;
+            text-decoration: underline solid rgb(142, 43, 199);
+        }
+        .subtitle {
+            font-size: 18px;
+            text-align: center;
+            color: rgb(8, 42, 65);
+            padding-top: 5px ;
+            margin-top: 2px ;
+        }
+
+        .top-nav ul {
+            font-size: 20px;
+            list-style-type: none;
+            overflow: hidden;
+            background-color: rgb(240, 108, 245);
+            }
+        .top-nav li {
+            display: block;
+            color: rgb(0, 0, 0);
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        .top-right ul{
+            list-style-type: none;
+            overflow: hidden;
+        }
+        .top-right li{
+            display: block;
+            float: right;
+        }
+        .top-right li input,button{
+            padding: 7px;
+            border-radius: 5px;
+
+        }
+        .p4 {
+            font-size: 30px;
+            text-decoration: underline;
+            text-align: center;
+            color: rgb(226, 4, 171);
+            padding-bottom: 5px ;
+            margin-bottom: 2px ;
+           
+        }
+        a:hover{
+            color:rgb(17, 0, 255);
+        }
+ .button {
+ display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(226, 4, 171);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.visually-hidden {
+    margin-left: 620px;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: dotted;
+}
+.paragraph{
+      font-family: 'Work Sans', sans-serif;
+}
+        </style>
+    <body>
+        <header>
+            <p class="title">Find Your Recipe.</p>
+            <p class="subtitle">Got some ingredients? Recipie is Ready!</p> 
+        <div class="top-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            
+                <li><a href="#">About</a></li>
+            <div class="top-right">
+                <li><a href="./signup.html">Sign In</a></li>
+            </div>     
+            </ul>
+            </div>   
+        </header>
+ 
+           <header>
+             <p class="paragraph">Got some ingredients and don't know what to cook? Wokbites is here at your service.We emphasize ingredients first and foremost because we believe they are central to our environmental and personal wellbeing and our customs and cultures.</p>
+           </header>
+    </body>
+</html>
